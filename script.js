@@ -6,7 +6,7 @@ var weapons = [
         alt: "Blacktail",
         damage: 3.60,
         capacity: 13,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "Bolt",
@@ -15,7 +15,7 @@ var weapons = [
         alt: "Bolt Thrower",
         damage: 2.40,
         capacity: 20,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "Broken",
@@ -24,7 +24,7 @@ var weapons = [
         alt: "Broken Butterfly",
         damage: 40.5,
         capacity: 10,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "Chicago",
@@ -33,7 +33,7 @@ var weapons = [
         alt: "Chicago",
         damage: 2.00,
         capacity: 100,
-        weight: 10.0 // Peso da arma
+        weight: 10.0
     },
     {
         name: "CQBR",
@@ -42,7 +42,7 @@ var weapons = [
         alt: "CQBR AR",
         damage: 5.10,
         capacity: 32,
-        weight: 10.0 // Peso da arma
+        weight: 10.0
     },
     {
         name: "Handcannon",
@@ -51,7 +51,7 @@ var weapons = [
         alt: "Handcannon",
         damage: 36.0,
         capacity: 6,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "Killer",
@@ -60,7 +60,7 @@ var weapons = [
         alt: "Killer7",
         damage: 28.0,
         capacity: 15,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "LE",
@@ -69,7 +69,7 @@ var weapons = [
         alt: "LE 4",
         damage: 1.20,
         capacity: 60,
-        weight: 10.0 // Peso da arma
+        weight: 10.0
     },
     {
         name: "Matilda",
@@ -78,7 +78,7 @@ var weapons = [
         alt: "Matilda",
         damage: 2.00,
         capacity: 60,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "Punisher",
@@ -87,7 +87,7 @@ var weapons = [
         alt: "Punisher",
         damage: 1.90,
         capacity: 24,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "Red-9",
@@ -96,7 +96,7 @@ var weapons = [
         alt: "Red-9",
         damage: 4.05,
         capacity: 16,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "Riot",
@@ -105,7 +105,7 @@ var weapons = [
         alt: "Riot Gun",
         damage: 19.2,
         capacity: 12,
-        weight: 10.0 // Peso da arma
+        weight: 10.0
     },
     {
         name: "Sentinel",
@@ -114,7 +114,7 @@ var weapons = [
         alt: "Sentinel Nine",
         damage: 1.9,
         capacity: 31,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "SG-09",
@@ -123,7 +123,7 @@ var weapons = [
         alt: "SG-09 R",
         damage: 2.00,
         capacity: 18,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "Skull",
@@ -132,7 +132,7 @@ var weapons = [
         alt: "Skull Shaker",
         damage: 18.1,
         capacity: 6,
-        weight: 10.0 // Peso da arma
+        weight: 10.0
     },
     {
         name: "SR",
@@ -141,7 +141,7 @@ var weapons = [
         alt: "SR M1903",
         damage: 10.6,
         capacity: 13,
-        weight: 10.0 // Peso da arma
+        weight: 10.0
     },
     {
         name: "Stingray",
@@ -150,7 +150,7 @@ var weapons = [
         alt: "Stingray",
         damage: 4.90,
         capacity: 18,
-        weight: 10.0 // Peso da arma
+        weight: 10.0
     },
     {
         name: "Striker",
@@ -159,7 +159,7 @@ var weapons = [
         alt: "Striker",
         damage: 16.2,
         capacity: 48,
-        weight: 10.0 // Peso da arma
+        weight: 10.0
     },
     {
         name: "TMP",
@@ -168,7 +168,7 @@ var weapons = [
         alt: "TMP",
         damage: 1.65,
         capacity: 70,
-        weight: 6.0 // Peso da arma
+        weight: 6.0
     },
     {
         name: "W-870",
@@ -177,7 +177,7 @@ var weapons = [
         alt: "W-870",
         damage: 20.2,
         capacity: 10,
-        weight: 10.0 // Peso da arma
+        weight: 10.0
     }
 ];
 
@@ -186,22 +186,18 @@ const capacity = 70.0;
 
 // Função para adicionar arma
 function adicionarArma(armaId, armaNome) {
-    // Verifica se a arma já foi adicionada para evitar duplicatas
     if (armasUsuario.includes(armaId)) {
         alert('Arma já adicionada!');
         return;
     }
 
-    // Verifica a capacidade da mochila
     if (calcularPesoTotal() + obterPesoArma(armaId) > capacity) {
         alert('Capacidade da mochila excedida!');
         return;
     }
 
-    // Adiciona a arma à lista de armas selecionadas
     armasUsuario.push(armaId);
 
-    // Atualiza a exibição das armas selecionadas
     atualizarArmasUsuario();
 }
 
@@ -216,11 +212,11 @@ function calcularPesoTotal() {
     return pesoTotal;
 }
 
-// Função para obter o peso de uma arma (substitua esta função com informações reais)
+// Função para obter o peso de uma arma
 function obterPesoArma(armaId) {
-    // Substitua isso pela lógica real para obter o peso da arma com base no ID
-    // Aqui, estou usando um valor fixo de 10 como exemplo.
-    return 10;
+    const arma = weapons.find(w => w.name === armaId);
+
+    return arma ? arma.weight : 0;
 }
 
 // Função para atualizar a exibição das armas selecionadas
@@ -228,20 +224,18 @@ function atualizarArmasUsuario() {
     var listaArmasUsuario = document.getElementById('armasUsuario');
     listaArmasUsuario.innerHTML = '';
 
-    // Adiciona cada arma à lista
     armasUsuario.forEach(function (armaId) {
         var arma = weapons.find(function (w) { return w.name === armaId; });
 
         if (arma) {
             var itemLista = document.createElement('div');
-            itemLista.textContent = `${arma.name} - Dano: ${arma.damage.toFixed(2)}, Capacidade: ${arma.capacity}`;
+            itemLista.innerHTML = `<strong>${arma.name}</strong> - Dano: ${arma.damage.toFixed(2)}, Capacidade: ${arma.capacity}`;
             listaArmasUsuario.appendChild(itemLista);
         }
     });
 
-    // Exibe o peso total das armas do usuário
     var pesoTotalElement = document.createElement('div');
-    pesoTotalElement.textContent = 'Peso Total: ' + calcularPesoTotal().toFixed(2) + ' / ' + capacity;
+    pesoTotalElement.innerHTML = `Peso Total: ${calcularPesoTotal().toFixed(2)} / ${capacity}<br>Dano Total: ${calcularDanoTotalUsuario().toFixed(2)}`;
     listaArmasUsuario.appendChild(pesoTotalElement);
 }
 
@@ -249,26 +243,51 @@ document.addEventListener("DOMContentLoaded", function () {
     knapsack(weapons, 70);
     console.log("Script rodando!");
 
-    // Adicione o código para exibir as armas selecionadas na div
     const armasSelecionadasDiv = document.getElementById("armasSelecionadas");
-
-    // Simule o resultado do seu algoritmo de mochila dinâmica
     
     const result = knapsack(weapons, capacity);
 
-    // Use os resultados reais do algoritmo para criar o array de armas selecionadas
     const armasSelecionadas = result.selectedWeapons;
 
-    // Construa o HTML para exibir as armas selecionadas
     const htmlArmasSelecionadas = armasSelecionadas.map(arma => `
         <div>
             <strong>${arma.name}</strong> - Dano: ${arma.damage}, Capacidade: ${arma.capacity}
         </div>
     `).join('');
 
-    // Adicione o HTML à div
     armasSelecionadasDiv.innerHTML = htmlArmasSelecionadas;
-  });
+
+    var pesoTotalElement = document.createElement('div');
+    pesoTotalElement.textContent = 'Dano Total Melhores Armas: ' + calcularDanoTotalMelhoresArmas().toFixed(2);
+    armasSelecionadasDiv.appendChild(pesoTotalElement);
+});
+
+// Função para calcular o dano total das armas do usuário
+function calcularDanoTotalUsuario() {
+    var danoTotalUsuario = 0;
+
+    armasUsuario.forEach(function (armaId) {
+        var arma = weapons.find(function (w) { return w.name === armaId; });
+        if (arma) {
+            danoTotalUsuario += arma.damage * arma.capacity;
+        }
+    });
+
+    return danoTotalUsuario;
+}
+
+// Função para calcular o dano total das melhores armas
+function calcularDanoTotalMelhoresArmas() {
+    var danoTotalMelhoresArmas = 0;
+
+    const armasSelecionadas = knapsack(weapons, capacity).selectedWeapons;
+
+    armasSelecionadas.forEach(function (arma) {
+        danoTotalMelhoresArmas += arma.damage * arma.capacity;
+    });
+
+    return danoTotalMelhoresArmas;
+}
 
 function knapsack(weapons, capacity) {
     const n = weapons.length;
