@@ -2,26 +2,29 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
   <!-- Estilos -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
   <!-- Progress Bar -->
@@ -30,218 +33,231 @@
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
   <!-- Estilos -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
   <!-- Progress Bar -->
   <script src="js/progressbar.min.js"></script>
   <!-- Parallax -->
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    <title>Resident Evil</title>
-    
+  <title>Resident Evil</title>
+
+  <script src="script.js"></script>
 </head>
 
 <body class="bg-dark">
-   
-<nav class=" navbar navbar-expand-lg navbar navbar-dark bg-dark ">
+
+  <nav class=" navbar navbar-expand-lg navbar navbar-dark bg-dark ">
     <a class=" navbar-brand" href="#">Resident Evil</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="https://journals.openedition.org/confins/25365?lang=pt">Os transportes e as
-                    dinâmicas territoriais no Amazonas<span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/projeto-de-algoritmos/Grafos2_Boat-Tour">Git Hub</a>
-            </li>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/projeto-de-algoritmos/PD-Resident_Evil">Git Hub</a>
+        </li>
     </div>
-</nav>
+  </nav>
 
-    <div class="container coll-6 "  style="background-image: url('img/Bag.jpg'); background-repeat: no-repeat; position: relative; padding: 15px; border-radius: 2%;">
-        
-        <div class="container">
-            <div class="row">
-                <div id ="titleG" class="col-sm">
-                  <h2>Armas</h2>
-                </div>
-                <div class="col-sm">
-                  Uma de três colunas
-                </div>
-                <div class="col-sm">
-                  Uma de três colunas
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <div id="mainSlider" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                  
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/Sentinel.jpg" class="d-block w-50" alt="Projetos de e-commerce">
-            
-                        <!-- tirar classe d-none -->
-            
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/SG-09.jpg" class="d-block w-50" alt="Engenharia de software">
-                        <div class="carousel-caption d-md-block">
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Punisher.jpg" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Blacktail.jpg" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Red-9.jpg" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Matilda.jpg" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/TPM.jpg" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/LE.jpg" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Chicago.jpg" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/SR.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Stingray.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/CQBR.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/W.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Riot.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Skull.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Striker.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Bolt.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Broken.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Killer.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Handcannon.png" class="d-block w-50" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block" >
-                          <a href="#" class="main-btn">Adicionar Arma</a>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-sm">
-                Uma de três colunas
-              </div>
-              <div class="col-sm">
-                
-                
+  <div class="container coll-6 "
+    style="background-image: url('img/Bag.jpg'); background-repeat: no-repeat; position: relative; padding: 15px; border-radius: 2%;">
 
+    <div class="container">
+      <div class="row">
+        <div id="titleG" class="col-sm">
+          <h2>Armas</h2>
+        </div>
+        <div class="col-sm">
+          Uma de três colunas
+        </div>
+        <div class="col-sm">
+          Uma de três colunas
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div id="mainSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="Sentinel">
+                <img src="img/Sentinel.jpg" class="d-block w-50 weapon" alt="Projetos de e-commerce">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Sentinel', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="SG-09">
+                <img src="img/SG-09.jpg" class="d-block w-50 weapon" alt="Engenharia de software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('SG-09', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Punisher">
+                <img src="img/Punisher.jpg" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Punisher', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Blacktail">
+                <img src="img/Blacktail.jpg" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Blacktail', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Red-9">
+                <img src="img/Red-9.jpg" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Red-9', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Matilda">
+                <img src="img/Matilda.jpg" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Matilda', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="TMP">
+                <img src="img/TMP.jpg" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('TMP', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="LE-5">
+                <img src="img/LE.jpg" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('LE-5', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Chicago">
+                <img src="img/Chicago.jpg" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Chicago', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="SR-M1903">
+                <img src="img/SR.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('SR-M1903', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Stingray">
+                <img src="img/Stingray.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Stingray', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="CQBR-AR">
+                <img src="img/CQBR.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('CQBR-AR', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="W-870">
+                <img src="img/W.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('W-870', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Riot">
+                <img src="img/Riot.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Riot', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Skull">
+                <img src="img/Skull.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Skull', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Striker">
+                <img src="img/Striker.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Striker', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Bolt">
+                <img src="img/Bolt.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Bolt', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Broken">
+                <img src="img/Broken.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Broken', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Killer">
+                <img src="img/Killer.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Killer', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
+              </div>
+              <div class="carousel-item" id="Handcannon">
+                <img src="img/Handcannon.png" class="d-block w-50 weapon" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                  <a href="#" class="main-btn" onclick="adicionarArma('Handcannon', 'Nome da Arma')">Adicionar Arma</a>
+                </div>
               </div>
             </div>
-           
-            
+
+            <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm">
+          Uma de três colunas
+        </div>
+        <div class="col-sm">
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <!-- Melhores Armas -->
+          <div class="col-sm">
+            <h2>Melhores Armas</h2>
+            <div id="armasSelecionadas" style="max-height: 300px; overflow-y: auto;"></div>
+          </div>
+          <!-- Armas do Usuário -->
+          <div class="col-sm">
+            <h2>Armas do Usuário</h2>
+            <div id="armasUsuario" style="max-height: 300px; overflow-y: auto;"></div>
+          </div>
+        </div>
+  
+
+      
+    </div>
+
+
     </div>
 
     <footer class="text-center mt-3 mb-3 text-light">
-        <p>&copy <a href="https://github.com/charles-serafim">Charles Serafim</a> && <a
-                href="https://github.com/thiago-Cerq">Thiago Cerqueira</a></p>
+      <p>&copy <a href="https://github.com/charles-serafim">Charles Serafim</a> && <a
+          href="https://github.com/thiago-Cerq">Thiago Cerqueira</a></p>
     </footer>
 </body>
 
