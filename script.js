@@ -63,7 +63,7 @@ var weapons = [
         weight: 6.0
     },
     {
-        name: "LE",
+        name: "LE-5",
         imgSrc: "img/LE.jpg",
         class: "rifle",
         alt: "LE 4",
@@ -135,7 +135,7 @@ var weapons = [
         weight: 10.0
     },
     {
-        name: "SR",
+        name: "SR-M1903",
         imgSrc: "img/SR.png",
         class: "rifle",
         alt: "SR M1903",
