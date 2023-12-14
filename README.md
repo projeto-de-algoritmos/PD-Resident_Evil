@@ -18,7 +18,7 @@ Para o cálculo, foi utilizado o [algoritmo de Mochila](https://pt.wikipedia.org
 
 ## Vídeo de apresentação
 
-A execução do programa e explicação da aplicação dos algoritmos e código podem ser vistas através de download do [arquivo do vídeo da apresentação, constante dentro desse repositório](https://github.com/projeto-de-algoritmos/Grafos2_Amazon-Boat-Tour/blob/master/Apresenta%C3%A7%C3%A3o_Trabalho_Grafos_2_Amazon_Boat_Tour.mp4) ou no [YouTube](https://www.youtube.com/watch?v=8hWu22xi3HM).
+A execução do programa e explicação da aplicação dos algoritmos e código podem ser vistas através de download do [arquivo do vídeo da apresentação, constante dentro desse repositório](https://github.com/projeto-de-algoritmos/PD-Resident_Evil/blob/main/T5%20-%20Programa%C3%A7%C3%A3o%20Din%C3%A2mica.mp4) ou no [YouTube](https://www.youtube.com/watch?v=bp6bxOma2RM&t=11s).
 
 
 ## Screenshots
