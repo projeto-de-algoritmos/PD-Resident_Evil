@@ -43,7 +43,7 @@ A aplicação pode ser utilizada no GitHub Pages do projeto, acessível através
 
 Uma vez dentro da aplicação, para gerar os roteiros, basta seguir os seguintes passos:
 
-1° - Selecione local de origem.<br>
-2° - Selecione local de destino.<br>
-3° - Selecione a opção de Rota.<br>
-4° - Selecione Calcular Rota.<br>
+1° - Selecione as armas que deseja.<br>
+2° - Elas serão adicionadas na maleta.<br>
+3° - Será calculado o dano total + espaço total.<br>
+4° - Tente obter o maior dano possível.<br>
